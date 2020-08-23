@@ -4,7 +4,7 @@ from model import bot_utils
 app = Flask(__name__, template_folder="template")
 
 
-@app.route('/')
+@app.route('/',methods=['GET', 'POST'])
 def index():
     return render_template("login.html")
 
